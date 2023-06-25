@@ -9,7 +9,6 @@
 
 *{
     box-sizing: border-box;
-    margin:0;
     padding:0;
 }
 
@@ -35,12 +34,18 @@ font-size: 3em;
 background-color: var(--white);
 font-weight:bold;
 margin: 0 auto;
-padding: 1rem;
+padding: 3rem;
+border:  solid black;
+
 
 }
 
 h2{
     text-align: center;
+}
+
+h3{
+    color: #000000;
 }
 
 nav{
@@ -49,7 +54,22 @@ nav{
     color: var(--white);
     padding: 1rem 0;
     justify-content:center;
-    
+    gap: 1rem;
+    text-decoration: none;
+}
+
+nav ul{
+    display:flex;
+    gap: 10rem;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+
+
+label{
+    margin-left: 1rem;
 }
 
 #gallery{
@@ -70,7 +90,9 @@ nav{
 }
 
 main{
-    background-color:var(--white)
+    background-color:var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
@@ -81,3 +103,58 @@ footer{
     color: #ffffff;
     padding: 1rem;
 }
+
+
+
+
+@media screen and (min-width: 880px){
+
+main{
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 0;
+}
+
+figure:nth-child(3) figcaption{
+    position:absolute;
+    bottom:56%;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+
+}
+
+}
+
+
+@media screen and (min-width:1300 px){
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav{
+        justify-content: flex-end;
+    }
+
+    nav ul{
+        marign: 2px;;
+    }
+
+    figure:nth-child(3) figcaption{
+        position: absolute;
+        bottom: 0%;
+        left 50%;
+        transform: translateX(-50%);
+        padding: 1rem;
+    }
+
+}
+    
