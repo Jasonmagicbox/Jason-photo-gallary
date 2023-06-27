@@ -150,9 +150,10 @@ figure:nth-child(12) figcaption{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding: 5px;
     color: black;
 }
+
+
 
 
 
@@ -165,7 +166,6 @@ figure:nth-child(7) figcaption{
     left: 50%;
     transform: translateX(-50%);
     width:100%;
-    padding: 1rem;
     text-align: center;
 }
 
@@ -291,11 +291,20 @@ footer{
         position: absolute;
         bottom: 56%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-190px, 160px);
+        offset-distance: 50%;
         padding: 1rem;
     }
 }
 
+figure:nth-child(6) figcaption {
+    color: black;
+}
+
+figure:nth-child(8) figcaption {
+width: max-content;
+
+}
 @media screen and (min-width: 1300px) {
     .picture{
         display: grid;
