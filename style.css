@@ -287,15 +287,16 @@ footer{
         margin: 0;
     }
 
-    figure:nth-child(3) figcaption {
+    figure:nth-child(3) figcaption { 
         position: absolute;
-        bottom: 56%;
+        bottom: -25px;
         left: 50%;
-        transform: translate(-230px, 180px);
-        offset-distance: 50%;
+        /* transform: translate(-230px, 180px); */
+        offset-distance: 60;
         padding: 1rem;
     }
-}
+
+
 
 figure:nth-child(6) figcaption {
     color: black;
