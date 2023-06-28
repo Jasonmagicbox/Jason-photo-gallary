@@ -291,7 +291,7 @@ footer{
         position: absolute;
         bottom: 56%;
         left: 50%;
-        transform: translate(-190px, 160px);
+        transform: translate(-230px, 180px);
         offset-distance: 50%;
         padding: 1rem;
     }
